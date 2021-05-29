@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+<script src="~/Content/Pages/jquery-1.11.1.min.js"></script>
+
+<script src="~/Content/Pages/Order.js"></script>
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data:">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    @*<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">*@
+    <!--<link rel="stylesheet" href="css/fontawesomeAll.css">-->
+    <link rel="stylesheet" href="~/Content/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="~/Content/css/4.3/mdb.min.css" />
+    <link rel="stylesheet" href="~/Content/css/mdb.min.css" />
+    <link rel="stylesheet" href="~/Content/customcss/common.css" />
+
+
+
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-logo">
+            <img src="~/Content/Pages/images/logo.jpg" style="max-width: 30%;" />
+            @*<img src="~/Content/Pages/images/med.jpg" width="114" height="33" alt="" />*@
+        </div>
+        <h1 style="font-family: Baskerville Old Face;padding-left:20px;">Order:</h1>
+        <div style="padding-left: 20px;">
+            <input type="text" id="txtAmount" name="Amount" class="form-control" placeholder=" Please Enter Amount" />
+
+            <input type="text" id="txtDiscount" name="Discount" class="form-control" placeholder=" Please Enter Discount" />
+
+            <input type="text" id="txtTotalAmt" name="TotalAmt" class="form-control" placeholder=" Please Enter TotalAmt" />
+
+            <input type="text" id="txtVat" name="TotalAmt" class="form-control" placeholder="Please Enter TotalAmt" />
+
+            <input type="text" id="txtTime" name="Time" class="form-control" placeholder="Please Enter Time" />
+
+            <input type="text" id="txtPayMode" name="PayMode" class="form-control" placeholder="Please Enter PayMode" />
+
+            <input type="text" id="txtPaid" name="Paid" class="form-control" placeholder=" Please Enter Paid" />
+
+            <input type="text" id="txtNote" name="Note" class="form-control" placeholder="Please Enter Note" />
+
+            <input type="text" id="txtAdvance" name="Advance" class="form-control" placeholder="Please Enter Advance" />
+
+            <input type="text" id="txtPoint" name="Point" class="form-control" placeholder="Please Enter Point" />
+
+            <input type="text" id="txtPerson" name="Person" class="form-control" placeholder="Please Enter Person" />
+
+            <input type="date" id="txtDate" name="Date" class="form-control" placeholder=" Please Enter Date" />
+
+            <input type="submit" name="Save" value="Save" onclick=saveOrder() />
+        </div>
+
+    </div>
+
+    <script src="~/Content/Pages/Order.js"></script>
+
+
+</body>
+</html>

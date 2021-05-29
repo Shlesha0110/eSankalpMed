@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Content/Pages/jquery-1.11.1.min.js"></script>
+<script src="~/Content/Pages/Bill.js"></script>
+
+<h2 style="text-align:center;">Bill Table</h2>
+<div style="padding-left:70px;">
+    <div class="col-sm-6">
+        <label>InvoiceId</label>
+        <input type="text" id="txtInvoiceId" name="InvoiceId" placeholder="Enter InvoiceId" class="form-control" />
+        <br />
+        <label>ItemId</label>
+        <input type="text" id="txtItemId" name="ItemId" placeholder="Enter ItemId" class="form-control" />
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>ItemQty</label>
+        <input type="text" id="txtItemQty" name="ItemQty" placeholder="Enter ItemQty" class="form-control" />
+        <br />
+        <label>ItemSaleAmt</label>
+        <input type="text" id="txtItemSaleAmt" name="ItemSaleAmt" placeholder="Enter ItemSaleAmt" class="form-control" />
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>Vat</label>
+        <input type="text" id="txtVat" name="Vat" placeholder="Enter Vat" class="form-control" />
+        <br />
+        <label>Rate</label>
+        <input type="text" id="txtRate" name="Rate" placeholder="Enter Rate" class="form-control" />
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>Discount</label>
+        <input type="text" id="txtDiscount" name="Discount" placeholder="Enter Discount" class="form-control" />
+        <br />
+        <label>Model</label>
+        <input type="text" id="txtModel" name="Model" placeholder="Enter Model" class="form-control" />
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>Size</label>
+        <input type="text" id="txtSize" name="Size" placeholder="Enter Size" class="form-control" />
+        <br />
+        <label>GST</label>
+        <input type="text" id="txtGST" name="GST" placeholder="Enter GST" class="form-control" />
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>Disc</label>
+        <input type="text" id="txtDisc" name="Disc" placeholder="Enter Disc" class="form-control" />
+        <br />
+        <label>TaxAmt</label>
+        <input type="text" id="txtTaxAmt" name="TaxAmt" placeholder="Enter TaxAmt" class="form-control" />
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>DoseTime</label>
+        <input type="text" id="txtDoseTime" name="DoseTime" placeholder="Enter DoseTime" class="form-control" />
+        <br />
+
+    </div>
+    <div class="col-sm-6">
+        <label>DoseQty</label>
+        <input type="text" id="txtDoseQty" name="DoseQty" placeholder="Enter DoseQty" class="form-control" />
+        <br />
+        <input id="Submit" type="submit" value="submit" onclick=saveBill() />
+    </div>
+</div>

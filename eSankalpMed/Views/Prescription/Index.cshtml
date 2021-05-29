@@ -1,0 +1,130 @@
+﻿@{
+    Layout = null;
+}
+
+@*<h1>Prescription page for users</h1>*@
+<script src="~/Content/Pages/jquery-1.11.1.min.js"></script>
+<script src="~/Content/Pages/Prescription.js"></script>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/fontawesome/css/all.css">
+    <link rel="stylesheet" href="~/Content/css/4.3/mdb.min.css">
+    <link rel="stylesheet" href="~/Content/css/mdb.min.css">
+
+    <link rel="stylesheet" href="~/Content/customcss/common.css">
+    <link rel="stylesheet" href="~/Content/customcss/sideNav.css">
+    <link rel="stylesheet" href="~/Content/customcss/menu.css">
+    <link rel="stylesheet" href="~/Content/customcss/addmenu.css">
+    <script type="text/javascript" src="~/Content/js/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        hr {
+            border: 0;
+            clear: both;
+            display: block;
+            width: 100%;
+            background-color: #D8D8D8;
+            height: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper chiller-theme">
+
+        <main class="page-content">
+
+            <header class="header-background">
+                <div class="header-dash">
+                    <div class="header-row">
+                        <div class="menu-icon div-sidebar-btn">
+                        </div>
+                        <div class="header-right" style=" padding-left: 30px;  margin-top: -12px;background-color: #CA0404;">
+                            <div class="kitchen-icon-menu">
+                                <img class="img-responsive img-rounded" src="~/Content/Pages/images/medlogo.jpg" width="56" height="61"
+                                     alt="User picture">
+
+                            </div>
+
+                            <div class="kitchen-info-menu">
+                                <span class="kitchen-name-menu" style="font-size:18px;">Prescription</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="tab-content menu-content pb-20">
+
+                <div role="tabpanel">
+                    <div class="row" style="padding-top: 12px;">
+                        <div style="border: solid;border-color: #c16933;border-radius:25px;">
+                            <b>.</b> While taking a picture do not crop any part of the prescription.<br />
+                            <b>.</b> Please upload only clear images.<br />
+                        </div>
+
+                    </div>
+
+                    <div class="package-wrapper">
+                        <div>
+                            <p style="font-size: 15px;"> <b> Please Fill The Details Below :-</b></p>
+                        </div>
+                        <div>
+                            <input id="txtPatient_Name" type="text" placeholder="Patient Name" /><br />
+                            <input id="File1" type="file" placeholder="Upload Photo" style="padding-top:25px;" /><br />
+                        </div>
+                        <div style="padding-top: 22px;">
+                            <input id="txtUploaded_Date" type="date" placeholder="Order date" /><br />
+                        </div>
+                        @*<div style="padding-top: 22px;">
+                            <input id="txtStatus" type="text" placeholder="Status" /><br />
+                        </div>
+                        <div style="padding-top: 22px;">
+                            <input id="txtDelivery_date" type="date" placeholder="Order date" /><br />
+                        </div>*@
+                    </div>
+
+                    <p style="padding-top: 5px;">
+
+                    </p>
+                    <button class="btn  ripple-surface btn-block setmenu-btn" style="font-size:14px;" id="Button1" type="submit" value="submit" onclick="savePrescription()">Submit</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="~/Content/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="~/Content/js/4.3/mdb.min.js"></script>
+    <script src="~/Content/customjs/menu.js"></script>
+    <script src="~/Content/customjs/addMenu.js"></script>
+
+    @*<h2>Admin Prescription List</h2>
+
+    <div class="container">
+        <div class="col-lg-6">
+            <table id="tbl_Prescription" border="1" class="table table-striped table-bordered table-hover table-condensed">
+                <thead>
+                <th>Customer_Id</th>
+                <th>Patient_Name</th>
+                <th>Photo</th>
+                <th>Uploaded_Date</th>
+                </thead>
+                <tbody></tbody>
+
+            </table>
+        </div>*@
+    </div>
+
+
+
+</body>
+</html>

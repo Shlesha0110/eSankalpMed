@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+@*<h1>Item Display For Users</h1>*@
+<script src="~/Content/Pages/jquery-1.11.1.min.js"></script>
+<script src="~/Content/Pages/Item.js"></script>
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/fontawesome/css/all.css">
+    <link rel="stylesheet" href="~/Content/css/4.3/mdb.min.css">
+    <link rel="stylesheet" href="~/Content/css/mdb.min.css">
+
+    <link rel="stylesheet" href="~/Content/customcss/common.css">
+    <link rel="stylesheet" href="~/Content/customcss/sideNav.css">
+    <link rel="stylesheet" href="~/Content/customcss/menu.css">
+    <link rel="stylesheet" href="~/Content/customcss/addmenu.css">
+    <script type="text/javascript" src="~/Content/js/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        hr {
+            border: 0;
+            clear: both;
+            display: block;
+            width: 100%;
+            background-color: #D8D8D8;
+            height: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper chiller-theme">
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+
+            <header class="header-background">
+                <div class="header-dash">
+                    <div class="header-row">
+                        <div class="menu-icon div-sidebar-btn">
+                        </div>
+                        <div class="header-right" style="padding-left: 30px;margin-top: -12px;">
+                            <div class="kitchen-icon-menu">
+                                <img class="img-responsive img-rounded" src="~/Content/Pages/images/Plus.PNG" width="56" height="61"
+                                     alt="User picture">
+
+                            </div>
+
+                            <div class="kitchen-info-menu">
+                                <span class="kitchen-name-menu" style="font-size:15px;">Pharmacy Products For You:</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col-sm-6" style="padding-top: 20px;">
+                <input id="txtItemName" type="text" placeholder="Enter Item Name" style="border: solid; border-color: #CC4031;" />
+                <button id="btnSearch" value="search" onclick=getItemList() style="margin-top: -42px; margin-left: 200px;">Search</button>
+
+            </div>
+
+
+
+            <div class="tab-content menu-content pb-20" style="padding-top: 40px;">
+                <div class="tab-pane fade in show active"
+                     id="panel111"
+                     role="tabpanel">
+                    <div class="">
+                        <div class="menu-header-row border-botton-none pb-1">
+
+                        </div>
+
+                        <div class="menu-list-table">
+                            <table class="table " id="tbl_Item">
+                                <tbody>
+                                    <tr>
+                                            <h1>Item</h1>
+                                            <h1 style="padding-left: 190px; margin-top: -34px; font-size: 22px;">Price</h1>
+                                      
+                                        <td>
+                                            <div class="menu-veg-input-name">
+                                                <div class="md-form form-sm">
+                                                    ItemName
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="menu-veg-input-price">
+                                                <div class="md-form form-sm">
+                                                    PurchasePrice
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="~/Content/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="~/Content/js/4.3/mdb.min.js"></script>
+    <script src="~/Content/customjs/menu.js"></script>
+    <script src="~/Content/customjs/addMenu.js"></script>
+</body>
+</html>

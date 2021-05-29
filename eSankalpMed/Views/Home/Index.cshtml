@@ -1,0 +1,266 @@
+﻿@using eSankalpMed.Models;
+@model RegistrationModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    Layout = null;
+}
+
+@*<h1>Login Page</h1>*@
+<script src="~/Content/Pages/jquery-1.11.1.min.js"></script>
+<script src="~/Content/Pages/Registration.js"></script>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HamareChemistji By Swapnil Tawar</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data:">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesomeAll.css">
+    <link rel="stylesheet" href="~/Content/contents/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="~/Content/css/4.3/mdb.min.css" />
+    <link rel="stylesheet" href="~/Content/css/mdb.min.css" />
+    <link rel="stylesheet" href="~/Content/customcss/common.css" />
+    <script src="~/Content/pages/jquery-3.6.0.min.js"></script>
+    <script src="~/Content/pages/Customer.js"></script>
+
+</head>
+
+
+<body>
+    <div>
+        <div class="login-wrapper">
+
+
+            <div class="login-logo">
+
+                <img src="~/Content/Pages/images/medlogo.jpg" width="124" height="36" alt=""> `
+            </div>
+
+            <div class="login-tab-box">
+                <div class="mb-4">
+                    <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab"
+                               aria-controls="ex1-tabs-1" aria-selected="true">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab"
+                               aria-controls="ex1-tabs-2" aria-selected="false">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-content">
+                    <div class="tab-content form-group" id="ex1-content">
+                        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                            <div class="login-tab">
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                @if (@ViewBag.Message != null)
+                                {
+                                    <div class="form-group">
+                                        @ViewBag.Message
+                                    </div>}
+
+                                @using (Html.BeginForm("LoginIn", "Login", FormMethod.Post))
+                                {
+                                    <div class="loginLogo">
+                                        <img src="~/assets/images/logo.svg" alt="">
+                                    </div>
+                                    <div class="loginHeading">
+                                        @*<h2>LOGIN</h2>*@
+                                    </div>
+                                    <div @*class="formContents"*@ class="md-form form-sm">
+                                        @*<h3>Welcome back,</h3>*@
+                                        <div class="form-group">
+                                            @*<input type="text" id="loginUsername" autocomplete="off" class="form-control">
+                                                <label for="loginUsername">Kitchen ID</label>*@
+                                            @Html.TextBoxFor(a => a.CustName)
+                                            @Html.LabelFor(a => a.CustName)
+                                            @Html.ValidationMessageFor(a => a.CustName)
+
+                                        </div>
+                                        <div @*class="form-group"*@ class="md-form form-sm">
+                                            @*<input type="text" id="loginPassword" autocomplete="off" class="form-control">
+                                                <label for="loginPassword">Password</label>*@
+                                            @Html.PasswordFor(a => a.Password)
+                                            @Html.LabelFor(a => a.Password)
+                                            @Html.ValidationMessageFor(a => a.Password)
+                                        </div>
+                                        <div class="form-group loginbuttonsSections">
+                                            <a href="" class="forgotPasswordText">Forgot Password?</a>
+                                            <input type="submit" value="Login" class="loginButton" />
+                                            <a href="javascript:void(0);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="15.5" viewBox="0 0 32 15.5">
+                                                    <defs>
+                                                        <style>
+                                                            .a {
+                                                                fill: #fff;
+                                                            }
+                                                        </style>
+                                                    </defs>
+                                                    <path class="a" d="M31.633,138.865h0l-6.531-6.5a1.25,1.25,0,0,0-1.764,1.772l4.385,4.364H1.25a1.25,1.25,0,0,0,0,2.5H27.722l-4.385,4.364a1.25,1.25,0,0,0,1.764,1.772l6.531-6.5h0A1.251,1.251,0,0,0,31.633,138.865Z" transform="translate(0 -132)" />
+                                                </svg>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="dontHaveAccount">
+                                        <p> Don't have an account yet? Start taking orders NOW by <a href="#ex1-tabs-2">SIGNING UP!</a></p>
+                                    </div>}
+
+                                @*<div class="">
+                                        <div class="mb-5">
+                                            <h1 class="login-title">
+                                                Welcome Back,
+                                                <span>User</span>
+                                            </h1>
+                                        </div>
+
+                                        <div class="mb-5">
+                                            <div class=" needs-validation-SignIn">
+                                                <form>
+                                                    <div class="md-form">
+                                                        <input type="text" id="kitchenID" class="form-control" required="required" />
+                                                        <label class="form-label" for="form1">CustName</label>
+                                                    </div>
+                                                    <div class="md-form">
+                                                        <input type="password" id="password" class="form-control" required="required" />
+                                                        <label class="form-label" for="form1Example2">Password</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-5 ">
+                                        <div class="col">
+                                            <a class="forgotPass" href="javascript:void(0)" id="forgotPass">
+                                                Forgot
+                                                password?
+                                            </a>
+                                        </div>
+
+                                    </div>*@
+                            </div>
+
+
+
+
+                            <div class="login-footer" style="text-align:right;">
+                                <div class="col">
+                                    @*<a href="~/FirstPage/Dashboard">*@
+                                    <button id="btnloginForm" class="btn btnloginForm" onclick="validateSignIn();" style=" background-color: #CA0404;">
+                                        <img src="~/Content/img/white-arrow.svg" width="29" height="14" alt="">
+                                    </button>
+                                    @*</a>*@
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+
+                            <div class="signup-scroll">
+                                <div class="mb-5 pb-2">
+                                    <h1 class="login-title"> Welcome, <span>User</span></h1>
+
+                                </div>
+
+
+                                <div class="mb-4 pb-5">
+                                    <div class=" needs-validation-first pb-5" id="SignUpFirst">
+                                        <div class="mb-4">
+                                            <h6 class="h6-title"> Enter your basic details here</h6>
+                                        </div>
+
+                                        <div class="md-form form-sm">
+                                            <input id="txtCustId" type="text" placeholder="CustId" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtCustName" type="text" placeholder="CustName" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtAddress" type="text" placeholder="Address" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtMobile" type="text" placeholder="Mobile" />
+                                        </div>
+
+                                        <div class="md-form form-sm">
+                                            <input id="txtEmail" type="text" placeholder="Email" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtDetails" type="text" placeholder="Details" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtDate" type="text" placeholder="Date" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtStatus" type="text" placeholder="Status" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtGST" type="text" placeholder="GST" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtPAN" type="text" placeholder="PAN" />
+                                        </div>
+                                        <div class="md-form form-sm">
+                                            <input id="txtPassword" type="text" placeholder="Password" />
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="Save" value="Save" onclick="saveRegistration()" />
+                                        </div>
+
+                                        @*<a href="~/FirstPage/Dashboard">*@
+                                        <div class="login-footer">
+                                            <div class="col">
+                                                <button id="btnSave" value="Save" class="btn btnloginForm" onclick="saveCustomer1()" style=" background-color: #CA0404;">
+
+                                                    <img src="~/Content/img/white-arrow.svg" width="29" height="14" alt="">
+
+                                                </button>
+                                            </div>
+                                        </div>
+                                        @*</a>*@
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row"><p></p></div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="~/Content/js/jquery-3.6.0.min.js"></script>
+    <script src="~/Content/js/login.js"></script>-->
+    <script src="cordova.js"></script>
+    <script src="~/Content/js/mdb.min.js"></script>
+    <script src="~/Content/js/4.3/mdb.min.js"></script>
+
+    <script src="~/Content/js/sweetalert.min.js"></script>
+
+
+
+</body>
+</html>

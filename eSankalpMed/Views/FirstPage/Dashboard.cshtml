@@ -1,0 +1,281 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/fontawesome/css/all.css">
+    <link rel="stylesheet" href="~/Content/css/4.3/mdb.min.css">
+    <link rel="stylesheet" href="~/Content/css/mdb.min.css">
+    <link rel="stylesheet" href="~/Content/customcss/common.css">
+    <link rel="stylesheet" href="~/Content/customcss/sideNav.css">
+    <link rel="stylesheet" href="~/Content/customcss/menu.css">
+    <link rel="stylesheet" href="~/Content/customcss/addmenu.css">
+    <link rel="stylesheet" href="~/Content/DonutWidget/jquery.DonutWidget.min.css" />
+    <script type="text/javascript" src="~/Content/js/jquery-3.6.0.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="page-wrapper chiller-theme">
+        <!-- sidenav -->
+        <nav class="sidebar sidebar-wrapper" id="sidebar">
+            <div class="sidebar__btn-close" id="sidebarBtnClose"></div>
+            <div class="sidebar-content custom-scrollbar">
+
+                <div class="sidebar-header">
+
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="~/Content/img/avatar.png" alt="User picture">
+                    </div>
+
+                    <div class="user-info">
+                        <span class="user-name"> Swapnil Tawar </span>
+                        <span class="user-info user-address">@*Besa Road, Manish Nagar,<br>Nagpur*@</span>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="~/Item/User_ItemDisplay">
+                                <i class='fas fa-home' style='font-size:20px;color:black'></i>
+                                <span style="font-size: 15px;">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='fas fa-cart-plus' style='font-size:20px;color:black'></i>
+                                <span style="font-size: 15px;">My Purchases</span>
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-clock-o" aria-hidden="true" style="font-size: 20px; color: black;"></i>
+                                <span style="font-size: 15px;">My Alert</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 20px; color: black;"></i>
+                                 <span style="font-size: 15px;">Store Locator</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-file-text-o" aria-hidden="true" style="font-size: 20px; color: black;"></i>
+                                <span style="font-size: 15px;">Feedback</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-phone" aria-hidden="true" style="font-size: 20px; color: black;"></i>
+                                <span style="font-size: 15px;">Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-credit-card" aria-hidden="true" style="font-size: 20px; color: black;"></i>
+
+                                <span style="font-size: 15px;">Payment</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user" aria-hidden="true" style="font-size: 20px; color: black;"></i>
+
+                                <span style="font-size: 15px;">Account</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="sidebar-overlay"></div>
+
+        <!-- sidenav end-->
+
+
+        <nav id="slide-out" class="sidebar-wrapper side side-nav2">
+            
+            <div class="sidenav-bg"></div>
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+            <header class="header-background" style="background-color: #CA0404;">
+                <div class="header-dash"  style=" background-color: #CA0404;">
+                    <div class="header-row">
+                        <div class="menu-icon div-sidebar-btn">
+                            <a id="sidebarBtnOpen" class="btn btn-sidebar p-3" href="#">
+                                <img src="~/Content/img/Menu.svg" width="18" height="16" alt="">
+                            </a>
+                        </div>
+                        <div class="header-right dashboard-header">
+                            <h1 class="header-title">Dashboard</h1>
+                            <div class="notification-bell">
+                                <a href="#"><img src="~/Content/img/bell.svg" width="25" height="25" alt=""> <span class="bell-circle"></span></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="main-wrapper white-radius-bg">
+
+                <div class="kitchen-row">
+                    <div class="kitchen-icon">
+                        <img src="~/Content/Pages/images/pharmacy.jpg" width="52" height="57" alt="">
+                    </div>
+                    <div class="kitchen-info">
+                        <h3><b>SHOP BY CATEGORY</b></h3>
+                        
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    @*<a href="~/FirstPage/Offer">*@
+                        <div class="dashinfo-col" @*style="padding:17px;"*@>
+
+                            <div class="dashvalue blue-txt">
+                                <a href="~/FirstPage/Offer">
+                                    <i class='fas fa-capsules' style='font-size:30px;color:black;'></i>
+                                    <div class="dashtext">Pharmacy</div>
+                                    </a>
+                            </div>
+                        </div>
+                    
+                    <div class="dashinfo-col">
+                    
+                        <i class='fa fa-child' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Baby Needs</div>
+                    </div>
+                    <div class="dashinfo-col">
+                        <i class='fa fa-american-sign-language-interpreting' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Personal Care</div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <p>                   </p>
+                </div>
+                <div class="dashboard-row">
+                    <div class="dashinfo-col">
+                        <i class='fas fa-apple-alt' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Health & Nutrition</div>
+                    </div>
+                    <div class="dashinfo-col">
+                        <i class='fas fa-plus-square' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Heath Needs</div>
+                    </div>
+                    <div class="dashinfo-col">
+                        <i class='fas fa-seedling' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Vitamins</div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <p>                   </p>
+                </div>
+                <div class="dashboard-row">
+                    <div class="dashinfo-col">
+                        <i class='fas fa-pills' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Diabetic Needs</div>
+                    </div>
+                    <div class="dashinfo-col">
+                        <i class='fas fa-diagnoses' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Flexi Rewards</div>
+                    </div>
+                    <div class="dashinfo-col">
+                        <i class='fas fa-house-user' style='font-size:30px;color:black;'></i>
+                        <div class="dashtext">Household Needs</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <footer class="font-small fixed-bottom">
+                <div class="text-center footer-dash" style="        background-color: #CA0404;">
+                    <div class="row mb-0">
+                        <div class="col">
+                            <button class="btn btnfooter"   style="border-top-left-radius: 25px;"> <i class="fas fa-2x fa-th-large" style="color:white;font-size:20px;"></i></button>
+                            <small class="buttonLabel">Dashboard</small>
+                        </div>
+                        <div class="col">
+                            <button class="btn btnfooter" id="btnfooterMenu" @*onclick="navigateToMenu();"*@><i class="fas fa-home" style="color: white; font-size: 20px;"></i></button>
+                            <small class="buttonLabel">Home</small>
+                        </div>
+                        <div class="col">
+                            <button class="btn btnfooter"> <i class="fas fa-capsules" style="color: white;font-size: 20px;"></i></button>
+                            <small class="buttonLabel">Orders</small>
+                        </div>
+                        <div class="col">
+                            <button class="btn btnfooter" style="border-top-right-radius: 25px;">
+                                <i class="material-icons" style="font-size:20px;color:white;"></i>
+                                <i class='fas fa-id-badge' style='font-size:20px;color:white;'></i>
+                            </button>
+                            <small class="buttonLabel">Account</small>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="~/Content/dist/js/bootstrap.min.js"></script>
+    <script src="~/Content/customjs/dashboard.js"></script>
+    <script src="~/Content/customjs/menu.js"></script>
+
+    <script src="~/Content/cordova.js"></script>
+    <script type="~/Content/text/javascript" src="~/Content/js/mdb.min.js"></script>
+    <script type="~/Content/text/javascript" src="~/Content/js/perfect-scrollbar.js"></script>
+    <script src="~/Content/js/materialize.min.js"></script>
+    <script src="~/Content/js/sidenav.js"></script>
+
+
+    
+
+    <script type="text/javascript" src="~/Content/DonutWidget/jquery.DonutWidget.min.js"></script>
+    <script src="~/Content/js/demo.js"></script>
+
+
+    <!-- <script>
+        (function () {
+            var sidebar = document.getElementById('sidebar');
+            var sidebarOverlay = document.getElementsByClassName('sidebar-overlay')[0];
+            var container = document.getElementsByClassName('container')[0];
+            var sidebarBtnClose = document.getElementById('sidebarBtnClose');
+            var sidebarBtnOpen = document.getElementById('sidebarBtnOpen');
+
+            var openSidebar = function () {
+                sidebarOverlay.style.left = '0';
+                sidebar.style.left = '0';
+            }
+
+            var closeSidebar = function (e) {
+                e.cancelBubble = true;
+                sidebarOverlay.style.left = '-100%';
+                sidebar.style.left = '-80%';
+            }
+
+            sidebarOverlay.addEventListener('click', closeSidebar);
+            sidebarBtnClose.addEventListener('click', closeSidebar);
+            sidebarBtnOpen.addEventListener('click', openSidebar);
+        })()
+    </script> -->
+</body>
+</html>

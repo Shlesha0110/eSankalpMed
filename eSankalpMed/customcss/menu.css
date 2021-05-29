@@ -1,0 +1,106 @@
+﻿.kitchen-icon-menu {
+    float: left;
+    width: 56px;
+    /*padding: 2px;*/
+    border-radius: 30px;
+    margin-right: 15px;
+    overflow: hidden;
+    /* margin-top:10px; */
+}
+
+    .kitchen-icon-menu img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    .kitchen-info-menu > span {
+        display: block;
+    }
+
+    .kitchen-info-menu .kitchen-name-menu {
+        font-size: 15px;
+        text-align: left;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .kitchen-info-menu .kitchen-role-menu {
+        font-size: 10px;
+        text-align:left;
+        color: #fff;
+    }
+
+
+span {
+    list-style-type: none;
+}
+
+    span a {
+        text-decoration: none;
+    }
+
+#cont {
+    background-color: #FFA451;
+    width: 101%;
+    padding: 0px;
+    height: 46px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.choice {
+    float: left;
+    margin-right: 1px;
+}
+
+    .choice span {
+        width: 136px;
+        padding: 8px 10px;
+        text-align: center;
+        float: left;
+        background: #ff3232;
+        margin-left: 2px;
+        margin-top: 3px;
+        transition: all 0.4s linear;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+    .choice .left {
+        background: linear-gradient(to right, #FFA451 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: left bottom;
+    }
+
+    .choice .right {
+        background: linear-gradient(to right, white 50%, #FFA451 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+    }
+
+    .choice .left.active {
+        background-position: right bottom;
+    }
+
+    .choice .right.active {
+        background-position: left bottom;
+    }
+
+    .choice span a {
+        color: black;
+    }
+
+.btn-add-menu {
+    background-color: #FFA451;
+    color:#fff;
+    font-weight:600;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+}

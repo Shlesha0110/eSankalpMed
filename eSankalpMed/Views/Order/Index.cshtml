@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div  @*style="background-color:lightblue;"*@>
+    <script src="~/Content/Pages/Order.js"></script>
+
+    <h2 style="text-align:center;">Order Table</h2>
+
+    <div class="col-lg-6" style="text-align:left;padding-left:70px;">
+        <div class="col-sm-6">
+          @*<label>CustId</label>
+            <input type="text" id="txtCustId" name="CustId" class="form-control" />
+            <br />*@
+        <label>Amount</label>
+            <input type="text" id="txtAmount" name="Amount" class="form-control" placeholder="Enter Amount" />
+            <br />
+            <label>Discount</label>
+            <input type="text" id="txtDiscount" name="Discount" class="form-control" placeholder="Enter Discount" />
+            <br />
+        </div>
+        <div class="col-sm-6">
+
+            <label>TotalAmt</label>
+            <input type="text" id="txtTotalAmt" name="TotalAmt" class="form-control" placeholder="Enter TotalAmt" />
+            <br />
+            <label>Vat</label>
+            <input type="text" id="txtVat" name="TotalAmt" class="form-control" placeholder="Enter TotalAmt" />
+            <br />
+        </div>
+        <div class="col-sm-6">
+
+            <label>Time</label>
+            <input type="text" id="txtTime" name="Time" class="form-control" placeholder="Enter Time" />
+            <br />
+            <label>PayMode</label>
+            <input type="text" id="txtPayMode" name="PayMode" class="form-control" placeholder="Enter PayMode" />
+            <br />
+        </div>
+        <div class="col-sm-6">
+
+            <label>Paid</label>
+            <input type="text" id="txtPaid" name="Paid" class="form-control" placeholder="Enter Paid" />
+            <br />
+            <label>Note</label>
+            <input type="text" id="txtNote" name="Note" class="form-control" placeholder="Enter Note" />
+            <br />
+        </div>
+        <div class="col-sm-6">
+
+            <label>Advance</label>
+            <input type="text" id="txtAdvance" name="Advance" class="form-control" placeholder="Enter Advance" />
+            <br />
+            <label>Point</label>
+            <input type="text" id="txtPoint" name="Point" class="form-control" placeholder="Enter Point" />
+            <br />
+        </div>
+        <div class="col-sm-6">
+
+            <label>Person</label>
+            <input type="text" id="txtPerson" name="Person" class="form-control" placeholder="Enter Person" />
+            <br />
+            <label>Date</label>
+            <input type="date" id="txtDate" name="Date" class="form-control" />
+            <br />
+            <input type="submit" name="Save" value="Save" onclick=saveOrder() />
+        </div>
+    </div>
+    @*<div class="vertical-center form-group">
+        <p>         </p>
+        <input type="submit" name="Save" value="Save" onclick=saveOrder() />
+
+    </div>*@
+</div>
+
+<table id="tbl_Order" border="1" class="table table-striped table-bordered table-hover table-condensed">
+    <thead>
+    <th>Id</th>
+    <th>CustId</th>
+    <th>Amount</th>
+    <th>Discount</th>
+    <th>TotalAmt</th>
+    <th>Vat</th>
+    <th>Time</th>
+    <th>PayMode</th>
+    <th>Paid</th>
+    <th>Note</th>
+    <th>Advance</th>
+    <th>Point</th>
+    <th>Person</th>
+    <th>Date</th>
+
+    </thead>
+    <tbody></tbody>
+</table>
+
+
+

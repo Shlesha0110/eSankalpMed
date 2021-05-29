@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Content/Pages/jquery-1.11.1.min.js"></script>
+<script src="~/Content/Pages/Item.js"></script>
+
+<h1 style="text-align:center;">Item table</h1>
+<div class="col-lg-6">
+    <div class="col-sm-6">
+        <label>ItemName</label>
+        <input type="text" id="txtItemName" name="ItemName" class="form-control" placeholder="Enter ItemName"/>
+        <br />
+        <label>PurchasePrice</label>
+        <input type="text" id="txtPurchasePrice" name="PurchasePrice" class="form-control" placeholder="Enter PurchasePrice"/>
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>SalePrice</label>
+        <input type="text" id="txtSalePrice" name="SalePrice" class="form-control" placeholder="Enter SalePrice"/>
+        <br />
+        <label>CatId</label>
+        <input type="text" id="txtCatId" name="CatId" class="form-control" placeholder="Enter CatId"/>
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>ItemQty</label>
+        <input type="text" id="txtItemQty" name="ItemQty" class="form-control" placeholder="Enter ItemQty"/>
+        <br />
+        <label>Unit</label>
+        <input type="text" id="txtUnit" name="Unit" class="form-control" placeholder="Enter Unit"/>
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>Details</label>
+        <input type="text" id="txtDetails" name="Details" class="form-control" placeholder="Enter Details"/>
+        <br />
+        <label>Vat</label>
+        <input type="text" id="txtVat" name="Vat" class="form-control" placeholder="Enter Vat"/>
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>Barcode</label>
+        <input type="text" id="txtBarcode" name="Barcode" class="form-control" placeholder="Enter Barcode"/>
+        <br />
+        <label>HSN</label>
+        <input type="text" id="txtHSN" name="HSN" class="form-control" placeholder="Enter HSN"/>
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>MFGComapny</label>
+        <input type="text" id="txtMFGComapny" name="MFGComapny" class="form-control" placeholder="Enter MFGComapny"/>
+        <br />
+        <label>ExpiryDate</label>
+        <input type="date" id="txtExpiryDate" name="ExpiryDate" class="form-control" />
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>MRP</label>
+        <input type="text" id="txtMRP" name="MRP" class="form-control" placeholder="Enter MRP"/>
+        <br />
+        <label>Wprice</label>
+        <input type="text" id="txtWprice" name="Wprice" class="form-control" placeholder="Enter Wprice"/>
+        <br />
+    </div>
+    <div class="col-sm-6">
+        <label>WoutSalePrice</label>
+        <input type="text" id="txtWoutSalePrice" name="WoutSalePrice" class="form-control" placeholder="Enter WoutSalePrice"/>
+        <br />
+        <label>MFGDate</label>
+        <input type="date" format="dd/MM/yyyy" id="txtMFGDate" name="MFGDate" class="form-control" />
+        <br />
+    </div>
+</div>
+
+
+<div class="col-md-12 mt-4">
+
+    <input type="submit" name="Save" value="Save" onclick="saveItem()" />
+
+</div>
+<div></div>
+<table id="tbl_Item" border="1" class="table table-striped table-bordered table-hover table-condensed">
+    <thead>
+    <th>Id</th>
+    <th>ItemName</th>
+    <th>PurchasePrice</th>
+    @*<th>SalePrice</th>
+    <th>CatId</th>
+    <th>ItemQty</th>
+    <th>Unit</th>
+    <th>Details</th>
+    <th>Vat</th>
+    <th>Barcode</th>
+    <th>HSN</th>
+    <th>MFGComapny</th>
+    <th>ExpiryDate</th>
+    <th>MRP</th>
+    <th>Wprice</th>
+    <th>WoutSalePrice</th>
+    <th>MFGDate</th>*@
+
+    </thead>
+    <tbody></tbody>
+</table>
+

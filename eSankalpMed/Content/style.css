@@ -1,0 +1,165 @@
+.logo-img {
+    width: 85%;
+    padding: 20px 40px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.fa-mobile {
+    padding: 20px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 15px;
+    border-bottom: 1px solid;
+}
+.btn-send-otp {
+    width: 85%;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    background-color: #d92525;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.or-value {
+    width: 85%;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+.btn-gmail {
+    width: 85%;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    background-color: #121275;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #f9b231;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+
+        .topnav a, .topnav input[type=text], .topnav .search-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+    .fa fa-search {
+        border: white;
+        background-color: white;
+    }
+}
+/** {
+    box-sizing: border-box;
+}*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;  
+}
+
+ Clear floats after the columns 
+.row:after {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+.product-bit-title {
+    background-color: white;
+    float: left;
+    width: 23%;
+    padding: 10px;
+    padding-left: 10px;
+    height: 75px;
+    padding-left: 20px;
+    border-right: solid 1px gray;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+    .navbar a {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+.active {
+    background-color: white;
+    color: black;
+    padding-left: 15px;
+    padding-top: 9px;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+.fa fa-bars {
+    background-color: white;
+    color: black;
+    padding-left: 15px;
+    padding-top: 9px;
+}
+.fa fa-home {
+    color: black;
+    background-color: white;
+    padding-left: 15px;
+}
